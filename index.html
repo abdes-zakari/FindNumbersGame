@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html ng-app="quizApp">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <title>Game: Find Numbers</title>
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script> -->
+          <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+          <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+          <link rel="stylesheet" href="assets/css/flexboxgrid.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+       <style type="text/css">
+           #info-box{
+            /*display:block*/
+           }
+           .fadeMe{
+            /*display:block*/
+           }
+
+       </style>
+    </head>
+
+    <body>
+      <center>
+        
+        <div class="container">
+            <div id="snackbar1"></div>
+            <div id="snackbar2"></div>
+            <div class="title">Find Numbers</div>
+            <br/>
+            <div class="wrap2 listNum">
+            </div>
+            <br/>
+            <div class="row"> <!-- <div class="wrap1"> -->
+                
+                <br>
+                 <div class="col-xs-offset-0 col-xs-12 col-sm-12 col-md-3 col-lg-3" style="border: 0px solid red">
+                 <div >
+                    <div class="result">
+                    <div class="selectedNumtxt"></div>
+                    <br><br><br>
+                    <div><span class="label">Time</span><br><span class="txt-result timer"></span></div>
+                    <br>
+                    <div> <button class="how-to-play">How to play</button> </div>
+                    <br>
+                    <!-- <div class="label"> Work only on Desktop</div> -->
+                </div>
+                </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="border: 0px solid blue">
+                <div class="ctn-game">
+                    <div class="box"><div class="ctn-box color-7">7</div></div>
+                    <div class="box"><div class="ctn-box color-9">9</div></div>
+                    <div class="box"><div class="ctn-box color-2">2</div></div>
+                    <div class="box"><div class="ctn-box color-4">4</div></div>
+                    <div class="box"><div class="ctn-box color-6">6</div></div>
+                </div>
+                <div class="ctn-game">
+                    <div class="box"><div class="ctn-box color-8">8</div></div>
+                    <div class="box"><div class="ctn-box color-1">1</div></div>
+                    <div class="box"><div class="ctn-box color-5">5</div></div>
+                    <div class="box"><div class="ctn-box color-2">2</div></div>
+                    <div class="box"><div class="ctn-box color-9">9</div></div>
+                </div>
+                <div class="ctn-game">
+                    <div class="box"><div class="ctn-box color-7">7</div></div>
+                    <div class="box"><div class="ctn-box color-2">2</div></div>
+                    <div class="box"><div class="ctn-box color-9">9</div></div>
+                    <div class="box"><div class="ctn-box color-8">8</div></div>
+                    <div class="box"><div class="ctn-box color-2">2</div></div>
+                </div>
+                <div class="ctn-game">
+                    <div class="box"><div class="ctn-box color-5">5</div></div>
+                    <div class="box"><div class="ctn-box color-2">2</div></div>
+                    <div class="box"><div class="ctn-box color-4">4</div></div>
+                    <div class="box"><div class="ctn-box color-8">8</div></div>
+                    <div class="box"><div class="ctn-box color-6">6</div></div>
+                </div>
+                <div class="ctn-game">
+                    <div class="box"><div class="ctn-box color-1">1</div></div>
+                    <div class="box"><div class="ctn-box color-5">5</div></div>
+                    <div class="box"><div class="ctn-box color-3">3</div></div>
+                    <div class="box"><div class="ctn-box color-4">4</div></div>
+                    <div class="box"><div class="ctn-box color-2">2</div></div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </center>
+      
+      <div id="info-box" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('info-box').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <div class="fadeMe">
+                <center>
+                     <div class="fadeMessage">
+                       <div class="messageFade">Congratulations you are smart</div>
+                       <div  class="play-again">Play Again<img src="assets/img/r.png" ></div>
+                    </div>
+                </center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="how-to-play-box" class="w3-modal">
+        <div class="w3-modal-content" style="width: 700px;">
+          <div class="w3-container">
+            <b onclick="document.getElementById('how-to-play-box').style.display='none'" class="w3-button w3-display-topright" style="color: red; font-size: 30px" >&times;</b>
+            <img src="assets/img/tuto.gif" width="100%" height="70%">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </body>
+</html>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         <script src="app.js"></script>
+
+
+

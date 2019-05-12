@@ -1,0 +1,333 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../LoSnello.ttf);
+}
+
+body {
+	margin: 0 auto;
+	text-align: center;
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-family: 'Helvetica', 'Arial';*/
+	font-family: myFirstFont;
+	/*opacity: 0.1;*/
+
+
+/*background: #0f0c29;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/*background-image: url("bg4.png");*/
+/*background-color: #212121;*/
+background-image: url("../img/bg.jpg");
+
+
+}
+
+.play-again{
+	cursor: pointer;
+}
+.fadeMe {
+    /*opacity:0.7;*/
+    /*filter: alpha(opacity=20);*/
+    /*background-color:#000; */
+    width:100%; 
+    height:100%; 
+    z-index:10;
+    top:0; 
+    left:0; 
+    position:fixed; 
+    display: block;
+  }
+  .fadeMessage{
+      opacity:1;
+     margin-top: 20%;
+     background-color: #0277bd;
+     font-size: 545%;
+     color: #FFF;
+     z-index:11;
+     height: 250px;
+  }
+
+h2 {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+.container {
+	/*width: 480px;*/
+	/*width: 100%;*/
+	/*margin: 0 auto;*/
+	margin-top: 10px;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+
+#options {
+	margin: 10px 0;
+}
+
+.next-question {
+	margin-right: 10px;
+}
+
+#score {
+	/*margin-top: 10px;*/
+	font-size: 100%;
+	font-weight: bold;
+}
+
+
+.title{
+	font-size: 300%;
+	color: #fbc02d;
+
+	text-align: center !important;
+}
+.unterTitel{
+	font-size: 150%;
+	color: #FFF;
+}
+
+
+
+.btn, .btn-large, .btn-small {
+	background-color: #c1003c !important;
+}
+
+
+
+
+
+.ctn-game{
+	/*border: 1px solid blue;*/
+	display: flex;
+	/*justify-content: space-around;*/
+}
+
+.ctn-x{
+	/*border: 1px solid blue;*/
+	display: flex;
+	/*justify-content: space-around;*/
+}
+
+.box{
+	text-align: center;
+	
+	height:auto;
+/*min-height:200px;*/
+	/*width: 200px;*/
+	 position: relative;
+	width: 100px;
+	color: #FFF;
+height: 100px;
+	
+	font-size: 100%;
+	/*background-color: #ffc107;*/
+	background-color: #b3e5fc;
+	border: 1px solid #FFF;
+	cursor: default;
+	-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.box-y{
+	text-align: center;
+	/*height: 200px;*/
+	height: 125px;
+
+/*min-height:200px;*/
+	/*width: 200px;*/
+	 position: relative;
+	width: 30px;
+	color: #FFF;
+
+	
+	/*font-size: 120%;*/
+	/*background-color: red;*/
+	/*border: 1px solid #FFF;*/
+	cursor: default;
+	-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.box-x{
+	text-align: center;
+	/*height: 200px;*/
+	height:auto;
+/*min-height:200px;*/
+	/*width: 200px;*/
+	 position: relative;
+	width: 10%;
+	color: #FFF;
+
+	
+	font-size: 120%;
+	/*background-color: red;*/
+	/*border: 1px solid #FFF;*/
+	cursor: default;
+	-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+
+.ctn-box{
+	 /*position: absolute;*/
+margin-left: 5%;
+  font-size: 60px;
+  margin-top: 20%;
+  color: #4caf50;
+  /*border: 1px solid blue;*/
+  width: 100px;
+}
+.result{
+	color:#01579b;
+	margin-left: -220px;
+	/*font-size: 162%;*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-family: 'Helvetica', 'Arial';*/
+}
+
+.label{
+	color: #000;
+	font-size: 162%;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', 'Arial';
+}
+
+.txt-result{
+	color: #2e7d32;
+	font-size: 262%;
+}
+
+.wrap2{
+	/*border: 1px solid blue;*/
+	/*float: left;*/
+	color: #FFF;
+	font-size: 30px;
+}
+.wrap1{
+	/*margin-left: 400px;*/
+}
+
+.selected-box{
+	background-color: #37474f;
+}
+
+
+
+
+/*Toast*/
+
+#snackbar1 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #00c853;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 11;
+    left: 70%;
+    bottom: 330px;
+    font-size: 17px;
+}
+
+#snackbar1.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbar2 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #b71c1c;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 70%;
+     bottom: 330px;
+    font-size: 17px;
+}
+
+#snackbar2.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/*Start Modal w3-css*/
+.w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+
+.w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-display-topright{position:absolute;right:0;top:0}
+
+/*END Modal w3-css*/
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 330px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 330px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 330px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 330px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+@media (max-width: 500px) {
+
+	.box{
+			width: 80px;
+            height: 80px;
+	}
+}
